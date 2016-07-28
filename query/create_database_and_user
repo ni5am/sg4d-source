@@ -1,0 +1,7 @@
+CREATE USER 'xss'@'localhost' IDENTIFIED BY 'xss';
+
+create database xss;
+
+grant all privileges on xss.* to xss@localhost ;
+
+ALTER DATABASE friend CHARACTER SET utf8 COLLATE utf8_unicode_ci;

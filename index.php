@@ -34,7 +34,7 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        자바스크립트에 삽입되어 실행되는 XSS의 예제입니다.
+                        자바스크립트 영역에 출력되어 실행되는 XSS의 예제입니다.
                     </p>
                 </div>
                 <div class='panel-footer'>
@@ -46,15 +46,31 @@
         <div class='col-sm-4'>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class='panel-title'>XSS in HTTP Header</h4>
+                    <h4 class='panel-title'>XSS in Request Header</h4>
                 </div>
                 <div class="panel-body">
                     <p>
-                        Response Header에 삽입되어 실행되는 XSS의 예제입니다.
+                        스크립트가 Requset Header에 삽입되어 실행되는 XSS의 예제입니다.
                     </p>
                 </div>
                 <div class='panel-footer'>
-                    <a class='btn btn-default' href='xss/index.html'>실습하기</a>
+                    <a class='btn btn-default' target="_blank" href='xss/header.php'>실습하기</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-sm-4'>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class='panel-title'>XSS in Response Header</h4>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        스크립트가 Response Header 영역에 출력되어 실행되는 XSS의 예제입니다.
+                    </p>
+                </div>
+                <div class='panel-footer'>
+                    <a class='btn btn-danger disabled' href='#'>개발중</a>
                 </div>
             </div>
         </div>
@@ -70,7 +86,7 @@
                     </p>
                 </div>
                 <div class='panel-footer'>
-                    <a class='btn btn-default' href='xss/index.html'>실습하기</a>
+                    <a class='btn btn-default' target="_blank" href='xss/json.php'>실습하기</a>
                 </div>
             </div>
         </div>
@@ -78,31 +94,15 @@
         <div class='col-sm-4'>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class='panel-title'>XSS in Otherside</h4>
+                    <h4 class='panel-title'>XSS in Event Handler</h4>
                 </div>
                 <div class="panel-body">
                     <p>
-                        입력된 값이 저장되어 다른곳에서 실행되는 XSS의 예제입니다.
+                        XSS가 tag의 Event Handler에 삽입되는 예제입니다.
                     </p>
                 </div>
                 <div class='panel-footer'>
-                    <a class='btn btn-default' href='xss/index.html'>실습하기</a>
-                </div>
-            </div>
-        </div>
-
-        <div class='col-sm-4'>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class='panel-title'>XSS in Ajax</h4>
-                </div>
-                <div class="panel-body">
-                    <p>
-                        Ajax를 통신을 통해 응답값에 XSS가 삽입되어 실행되는 예제입니다.
-                    </p>
-                </div>
-                <div class='panel-footer'>
-                    <a class='btn btn-default' href='xss/index.html'>실습하기</a>
+                    <a class='btn btn-default' target="_blank" href='xss/after_ajax.php'>실습하기</a>
                 </div>
             </div>
         </div>
